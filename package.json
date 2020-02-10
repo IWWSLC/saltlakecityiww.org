@@ -1,0 +1,26 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IWWSLC/saltlakecityiww.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IWWSLC/saltlakecityiww.org/issues"
+  },
+  "homepage": "https://github.com/IWWSLC/saltlakecityiww.org#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.26",
+    "postcss-nested": "^4.2.1",
+    "tailwindcss": "^1.2.0"
+  }
+}
