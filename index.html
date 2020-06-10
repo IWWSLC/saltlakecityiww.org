@@ -12,7 +12,10 @@
         <h1 class="text-2xl mt-4 font-bold">Utah IWW</h1>
         <p class="pt-4">
           IWW Branch for Utah. We are currently working to try to get up and
-          running. For general info contact hello[at]utahiww.org
+          running. For general info contact
+          <a href="" id="mailto" class="text-yellow-300 hover:underline"
+            >hello[at]utahiww.org</a
+          >
         </p>
         <p class="pb-4">
           You can also follow us on Twitter
@@ -71,5 +74,30 @@
         </ul>
       </div>
     </div>
+    <script>
+      const anchor = document.getElementById("mailto");
+      if (anchor) {
+        // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+        // Random encryption key feature coded by Andrew Moulden
+        // This code is freeware provided these four comment lines remain intact
+        // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+        let coded = "lhCCx@oj8l2LL.xSy";
+        let key =
+          "Dwc95jTAseVS4avBofLZ3zJbYPhRMi8W0xH6K7OnQIglFE2p1NtkmXGqrUdyCu";
+        let shift = coded.length;
+        let link = "";
+        for (i = 0; i < coded.length; i++) {
+          if (key.indexOf(coded.charAt(i)) == -1) {
+            let ltr = coded.charAt(i);
+            link += ltr;
+          } else {
+            let ltr =
+              (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+            link += key.charAt(ltr);
+          }
+        }
+        anchor.href = "mailto:" + link;
+      }
+    </script>
   </body>
 </html>
